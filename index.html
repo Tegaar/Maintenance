@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Website Sedang Dalam Pemeliharaan</title>
+<noscript><meta http-equiv="refresh" content="5;url=https://www.tegar.info"></noscript>
+<style>
+*{box-sizing:border-box;margin:0}
+html,body{height:100%}
+body{background:#0b0b0c;color:#f5f5f5;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow:hidden}
+.g{position:fixed;left:50%;top:-40vmax;width:80vmax;height:80vmax;margin-left:-40vmax;border-radius:50%;background:radial-gradient(closest-side,rgba(255,255,255,.09),transparent);animation:g 12s ease-in-out infinite alternate;pointer-events:none}
+@keyframes g{to{transform:translateY(8vmax) scale(1.1);opacity:.6}}
+.t{position:fixed;left:0;width:calc(100% + 40px);height:12px;opacity:.28;background:linear-gradient(45deg,#d4d4d4 25%,transparent 25%,transparent 50%,#d4d4d4 50%,#d4d4d4 75%,transparent 75%) 0 0/40px 40px;animation:m 3s linear infinite}
+.t1{top:0}
+.t2{bottom:0;animation-direction:reverse}
+@keyframes m{to{transform:translateX(-40px)}}
+main{position:relative;min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:3rem 1.5rem 4.5rem}
+.a{animation:u .9s cubic-bezier(.2,.7,.2,1) both;animation-delay:var(--d,0s)}
+@keyframes u{from{opacity:0;transform:translateY(20px)}}
+svg{width:76px;height:76px;color:#f5f5f5;margin-bottom:1.75rem;animation:r 24s linear infinite}
+@keyframes r{to{transform:rotate(360deg)}}
+.s{display:flex;align-items:center;gap:.6rem;margin-bottom:1.25rem;font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:#a3a3a3}
+.s i{width:7px;height:7px;border-radius:50%;background:#f5f5f5;animation:p 1.6s ease-in-out infinite}
+@keyframes p{50%{opacity:.2}}
+h1{font-size:clamp(1.6rem,5vw,2.5rem);font-weight:600;letter-spacing:.01em;line-height:1.25}
+p{max-width:34rem;margin-top:1rem;line-height:1.75;color:#a3a3a3;font-size:clamp(.95rem,2.5vw,1.05rem)}
+.bar{width:min(24rem,100%);height:3px;margin-top:2.5rem;border-radius:99px;background:#262626;overflow:hidden}
+.bar i{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,#737373,#fff);box-shadow:0 0 10px rgba(255,255,255,.5);transform-origin:left;animation:b 5s linear forwards}
+@keyframes b{from{transform:scaleX(0)}}
+#c{margin-top:.8rem;font-size:.82rem;letter-spacing:.06em;color:#a3a3a3}
+.btn{display:inline-block;margin-top:1.75rem;padding:.8rem 1.8rem;border:1px solid #f5f5f5;border-radius:4px;background:#f5f5f5;color:#0b0b0c;font-weight:600;font-size:.95rem;text-decoration:none;transition:transform .2s,background .2s,color .2s}
+.btn:hover{background:transparent;color:#f5f5f5;transform:translateY(-2px)}
+.btn:focus-visible{outline:2px solid #fff;outline-offset:4px}
+.btn:active{transform:scale(.98)}
+.n{position:fixed;right:1.25rem;bottom:1.6rem;font-size:.75rem;letter-spacing:.14em;color:#a3a3a3;opacity:.6}
+@media(prefers-reduced-motion:reduce){.g,.t,.a,svg,.s i{animation:none}.btn{transition:none}}
+</style>
+</head>
+<body>
+<div class="g"></div><div class="t t1"></div><div class="t t2"></div>
+<main>
+<svg class="a" viewBox="0 0 64 64" fill="none" stroke="currentColor" aria-hidden="true"><circle cx="32" cy="32" r="23" stroke-width="7" stroke-dasharray="3.6 3.6"/><circle cx="32" cy="32" r="18" stroke-width="2"/><circle cx="32" cy="32" r="7" stroke-width="2"/></svg>
+<div class="s a" style="--d:.1s"><i></i>Pemeliharaan Sistem</div>
+<h1 class="a" style="--d:.25s">Website Sedang Dalam Pemeliharaan</h1>
+<p class="a" style="--d:.45s">Mohon maaf atas ketidaknyamanannya. Saya sedang melakukan pembaruan 
+    untuk memberikan pengalaman yang lebih baik. Bapak/Ibu akan dialihkan ke tegar.info dalam beberapa saat.</p>
+<div class="bar a" style="--d:.65s" role="progressbar" aria-label="Progres pengalihan"><i></i></div>
+<div id="c" class="a" style="--d:.65s" role="status">Mengalihkan dalam 5...</div>
+<a class="btn a" style="--d:.85s" href="https://www.tegar.info">Kunjungi tegar.info sekarang</a>
+</main>
+<div class="n">Tegar Ardiyansyah</div>
+<script>
+var t=document.getElementById("c"),n=5;
+setInterval(function(){n--;if(n>0)t.textContent="Mengalihkan dalam "+n+"..."},1e3);
+setTimeout(function(){location.replace("https://www.tegar.info")},5e3);
+</script>
+</body>
+</html>
